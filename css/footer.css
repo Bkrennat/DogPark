@@ -1,1 +1,40 @@
-.dog-footer{background:var(--orange);padding:14px 0;margin-top:auto;color:#fff}.dog-footer h6{font-size:.72rem;font-weight:800;margin:0 0 3px}.dog-footer p{font-size:.62rem;margin:0;opacity:.95}.dog-footer i{margin:0 2px}.dog-footer .bi-linkedin{color:#0a66c2}.dog-footer .bi-instagram{color:#e4405f}.dog-footer .bi-youtube{color:#ff0000}
+.dog-footer {
+  background-color: var(--orange);
+  padding: 36px 20px;
+  margin-top: auto;
+  font-family: var(--font-main);
+}
+
+.dog-footer h6 {
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.dog-footer p, .footer-link {
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.social-icon:hover { opacity: 0.8; color: #fff; }
+
+.linkedin { background-color: #0077B5; }
+.instagram { background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
+.youtube { background-color: #FF0000; }

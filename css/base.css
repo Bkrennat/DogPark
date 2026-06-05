@@ -1,23 +1,131 @@
-:root{
-  --orange:#ffc77d;
-  --green:#6eaf72;
-  --pink:#ff6377;
-  --dark:#171717;
-  --muted:#f7f7f7;
-  --border:#dedede;
-  --shadow:0 8px 24px rgba(0,0,0,.08);
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700;800&display=swap');
+
+:root {
+  --orange: #ffc77d;
+  --green: #6eaf72;
+  --active: #6BA368;
+  --pink: #ff6377;
+  --yellow: #FFF04C;
+  --dark: #171717;
+  --muted: #f7f7f7;
+  --border: #dedede;
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
+  --font-main: "Fredoka", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:#1f1f1f;
-  color:var(--dark);
-  font-family:"Fredoka", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-.frame-title{color:#777;margin:32px 0 8px 30px;font-size:22px;font-weight:600}
-.page{width:min(100%,980px);min-height:100vh;margin:0 auto;background:#fff;display:flex;flex-direction:column}
-.content-shell{padding:36px clamp(18px,5vw,64px);flex:1}
-img{max-width:100%;display:block}.fw-heavy{font-weight:800}.small-text{font-size:.78rem}.section-card{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
-.search-box,.small-select{width:100%;height:42px;border:1px solid var(--border);border-radius:9px;padding:0 14px;background:#fff;outline:none;font-size:.9rem}.search-box:focus,.small-select:focus{border-color:var(--green);box-shadow:0 0 0 .2rem rgba(110,175,114,.16)}
-.btn-green{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;border:0;border-radius:7px;padding:10px 24px;text-decoration:none;font-weight:700}.btn-green:hover{background:#5b9c5f;color:#fff}.btn-soft{border:1px solid var(--border);background:#fff;border-radius:8px;padding:8px 18px;font-weight:600}.chip{border:1px solid var(--border);background:#fff;border-radius:999px;padding:7px 12px;font-size:.78rem;font-weight:600;display:inline-flex;gap:6px;align-items:center}
-@media(max-width:768px){.frame-title{margin-left:16px}.content-shell{padding:28px 16px}}
+
+body {
+  margin: 0;
+  background: #1f1f1f;
+  color: var(--dark);
+  font-family: var(--font-main);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.frame-title {
+  color: #777;
+  margin: 32px 0 8px 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-shell {
+  padding: 36px clamp(18px, 5vw, 64px);
+  flex: 1;
+}
+
+.fw-heavy { font-weight: 800; }
+.small-text { font-size: .78rem; }
+
+.search-box,
+.small-select {
+  width: 100%;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 0 14px;
+  background: white;
+  outline: none;
+  font-size: .9rem;
+  font-family: var(--font-main);
+}
+
+.search-box:focus,
+.small-select:focus {
+  border-color: var(--active);
+  box-shadow: 0 0 0 .2rem rgba(107, 163, 104, .16);
+}
+
+.section-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.btn-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--active);
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  padding: 10px 24px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.btn-green:hover {
+  background: #5b9c5f;
+  color: white;
+}
+
+.btn-soft {
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.btn-soft:hover {
+  background: var(--muted);
+}
+
+.chip {
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: .78rem;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .frame-title   { margin-left: 16px; }
+  .content-shell { padding: 28px 16px; }
+}

@@ -1,3 +1,80 @@
-.dog-navbar{background:var(--orange);min-height:44px;border-bottom:1px solid rgba(0,0,0,.08)}
-.dog-navbar .navbar-brand{font-size:1.2rem;font-weight:800;color:#050505;padding:0;margin-right:18px}.dog-navbar .navbar-brand i{font-size:1rem;margin-left:3px}.dog-navbar .nav-link{color:#111;font-size:.74rem;font-weight:700;padding:7px 10px!important;border-radius:6px}.dog-navbar .nav-link.active,.dog-navbar .nav-link:hover{background:rgba(255,255,255,.45);color:#000}.dog-navbar .nav-link i{font-size:.7rem;margin-right:3px}.profile-circle{width:28px;height:28px;border-radius:50%;background:#fff;color:#111;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.1rem}.navbar-toggler{border:0;padding:2px}.navbar-toggler:focus{box-shadow:none}
-@media(max-width:768px){.dog-navbar .navbar-nav{padding-top:8px}.profile-circle{margin-left:9px}}
+.dog-navbar {
+  background-color: var(--orange);
+  min-height: 70px;
+  font-family: var(--font-main);
+}
+
+.dog-navbar .navbar-brand {
+  font-family: var(--font-main);
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.dog-navbar .paw-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.dog-navbar .nav-link {
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 6px 10px !important;
+  border-radius: 6px;
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.dog-navbar .nav-link i {
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+.dog-navbar .nav-link:hover {
+  color: var(--active);
+}
+
+.dog-navbar .nav-link.active {
+  color: var(--active);
+}
+
+.dog-navbar .nav-link.active i {
+  color: var(--active);
+}
+
+.dog-navbar .profile-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--text-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin-left: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.dog-navbar .profile-circle:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .dog-navbar .navbar-nav {
+    padding: 8px 0;
+    gap: 4px !important;
+  }
+  .dog-navbar .nav-link {
+    font-size: 0.95rem;
+  }
+}
