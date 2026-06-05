@@ -17,11 +17,24 @@
   box-sizing: border-box;
 }
 
+html, body {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   background: #1f1f1f;
   color: var(--dark);
   font-family: var(--font-main);
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 img {

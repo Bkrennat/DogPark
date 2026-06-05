@@ -1,40 +1,47 @@
 .dog-footer {
-  background-color: var(--orange);
-  padding: 36px 20px;
-  margin-top: auto;
-  font-family: var(--font-main);
+  background-color: #FFCB8B;
 }
 
-.dog-footer h6 {
-  font-weight: 800;
-  font-size: 0.95rem;
-  margin-bottom: 8px;
+.footer-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
 }
 
-.dog-footer p, .footer-link {
-  font-size: 0.85rem;
-  color: var(--text-dark);
+.footer-link {
+  color: #333;
   text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
 }
 
 .footer-link:hover {
-  text-decoration: underline;
+  color: #FF6868;
 }
 
 .social-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: opacity 0.15s;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.2s;
 }
-.social-icon:hover { opacity: 0.8; color: #fff; }
 
-.linkedin { background-color: #0077B5; }
-.instagram { background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
-.youtube { background-color: #FF0000; }
+.social-icon:hover {
+  color: #FF6868;
+}
+
+.footer-divider {
+  border-color: rgba(0,0,0,0.4);
+  border-width: 1.5px;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.footer-logo-section {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+}

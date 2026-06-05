@@ -6,7 +6,7 @@
 
 .dog-navbar .navbar-brand {
   font-family: var(--font-main);
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: 800;
   color: var(--text-dark);
   letter-spacing: -0.5px;
@@ -14,28 +14,31 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
+  margin-left: 1.5rem;
 }
 
 .dog-navbar .paw-icon {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
+  margin-bottom: 8px;
 }
 
 .dog-navbar .nav-link {
   color: var(--text-dark);
   font-family: var(--font-main);
-  font-size: 1.05rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  padding: 6px 10px !important;
+  padding: 6px 20px !important;
   border-radius: 6px;
   transition: color 0.15s ease;
   text-decoration: none;
 }
 
 .dog-navbar .nav-link i {
-  font-size: 1rem;
+  font-size: 1.75rem;
   margin-right: 4px;
+  vertical-align: middle
 }
 
 .dog-navbar .nav-link:hover {

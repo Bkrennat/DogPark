@@ -1,2 +1,66 @@
-.home-hero{position:relative;height:245px;overflow:visible;border-bottom:4px solid #0d6efd}.home-hero img{width:100%;height:100%;object-fit:cover}.join-btn{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);background:var(--pink);color:#fff;text-decoration:none;border-radius:3px;padding:12px 28px;font-weight:700}.join-btn:hover{background:#ff465e;color:#fff}.home-cards{padding:72px clamp(20px,7vw,86px) 62px}.feature-card{height:135px;border:1px solid var(--border);border-radius:5px;overflow:hidden;position:relative;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.04)}.feature-card img{width:100%;height:100%;object-fit:cover}.feature-card h5{position:absolute;top:10px;left:12px;color:var(--pink);font-size:.8rem;font-weight:800;margin:0;text-shadow:0 1px 0 #fff}
-@media(max-width:768px){.home-hero{height:210px}.home-cards{padding:62px 24px 42px}.feature-card{height:170px}}
+.home-hero {
+  position: relative;
+  height: 300px;
+  overflow: visible;
+  border-bottom: 2px solid #ccc;
+}
+.home-hero img {width:100%;height:100%;object-fit:cover}
+
+.join-btn {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 18px 48px;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+.join-btn:hover {background:var(--active); color:white}
+
+.home-cards {
+  padding: 72px clamp(20px,7vw,86px) 62px;
+}
+
+.feature-card {
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.feature-card h5 {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: .85rem;
+  font-weight: 800;
+  margin: 0;
+  text-shadow: none;
+}
+
+.card-safety { background: #fff; border: 3px solid var(--pink); }
+.card-safety h5 { color: var(--pink); }
+
+.card-parks { background: #fff; border: 3px solid var(--green); }
+.card-parks h5 { color: var(--green); }
+
+.card-events { background: #fff; border: 3px solid var(--orange); }
+.card-events h5 { color: var(--orange); }
+
+@media(max-width:768px) {
+  .home-hero {height:210px}
+  .home-cards {padding:62px 24px 42px}
+  .feature-card {height:170px}
+}
