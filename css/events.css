@@ -1,1 +1,17 @@
-.event-note{font-size:.72rem;color:#666;margin-top:10px}.event-badge{position:absolute;top:7px;right:7px;background:var(--pink);color:#fff;border-radius:999px;padding:3px 7px;font-size:.62rem;font-weight:700}
+.event-note {
+    font-size: .72rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.event-badge {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background: var(--pink);
+    color: white;
+    border-radius: 999px;
+    padding: 3px 7px;
+    font-size: .62rem;
+    font-weight: 700;
+}
