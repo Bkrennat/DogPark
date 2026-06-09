@@ -11,24 +11,120 @@
 <body>
   <main class="page">
     <div id="navbar-placeholder"></div>
-
     <section class="content-shell">
-      <h5 class="fw-heavy">Updates & tips for dog park lovers</h5>
-      <input class="search-box my-3" placeholder="Search posts...">
-      <div class="category-row"><button class="btn-green py-2">All</button><button class="btn-soft">Park Updates</button><button class="btn-soft">Tips</button></div>
+
+      <h5 class="fw-heavy blog-title">Updates & tips for dog park lovers</h5>
+
+      <div class="blog-search-wrapper">
+        <i class="bi bi-search"></i>
+        <input class="blog-search-box" placeholder="Search posts...">
+      </div>
+
+      <div class="category-row">
+        <button class="cat-btn active-cat">All</button>
+        <button class="cat-btn"><i class="bi bi-tree-fill"></i> Parks updates</button>
+        <button class="cat-btn"><i class="bi bi-lightbulb"></i> Tips</button>
+        <button class="cat-btn"><i class="bi bi-calendar-event-fill"></i> Events</button>
+      </div>
+
       <article class="blog-card">
         <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=500&q=80" alt="Water fountain">
-        <div><span class="tag"><i class="bi bi-pin-map-fill"></i> Park update</span><h5>Greenwood Dog Park: New Water Fountain Installed</h5><p>We installed a new water fountain to keep dogs hydrated during warm days.</p><a class="read-btn" href="#">Read</a></div>
+        <div class="blog-card-content">
+          <span class="tag tag-park"><i class="bi bi-tree-fill"></i> Park updates</span>
+          <h5>Greenwood Dog Park: New water fountain installed</h5>
+          <p>We're excited to announce a new water fountain has been installed near the large-dog area. Keep your pups hydrated.</p>
+          <div class="blog-card-footer">
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> May 10, 2026</span>
+              <span><i class="bi bi-clock"></i> 3 min read</span>
+            </div>
+            <a class="read-btn" href="#">Read</a>
+          </div>
+        </div>
       </article>
+
       <article class="blog-card">
         <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=500&q=80" alt="Dog care">
-        <div><span class="tag"><i class="bi bi-lightbulb-fill"></i> Tip</span><h5>Tick Season: What to Watch For</h5><p>Simple prevention tips for safer walks and better dog health.</p><a class="read-btn" href="#">Read</a></div>
+        <div class="blog-card-content">
+          <span class="tag tag-tip"><i class="bi bi-lightbulb"></i> Tips</span>
+          <h5>Tick season: What to watch for</h5>
+          <p>Ticks are more active in spring. Learn the signs to look for and how to keep your dog protected.</p>
+          <div class="blog-card-footer">
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> Apr 30, 2026</span>
+              <span><i class="bi bi-clock"></i> 4 min read</span>
+            </div>
+            <a class="read-btn" href="#">Read</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1601758177266-bc599de87707?auto=format&fit=crop&w=500&q=80" alt="Dog event">
+        <div class="blog-card-content">
+          <span class="tag tag-event"><i class="bi bi-calendar-event-fill"></i> Events</span>
+          <h5>Spring Paw Fest 2026: Everything you need to know</h5>
+          <p>Our biggest community event is back! Join hundreds of dogs and their owners for a day of fun, food and activities.</p>
+          <div class="blog-card-footer">
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> Mar 28, 2026</span>
+              <span><i class="bi bi-clock"></i> 3 min read</span>
+            </div>
+            <a class="read-btn" href="#">Read</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=500&q=80" alt="Dog health">
+        <div class="blog-card-content">
+          <span class="tag tag-tip"><i class="bi bi-lightbulb"></i> Tips</span>
+          <h5>How to keep your dog cool in summer</h5>
+          <p>High temperatures can be dangerous for dogs. Here are our best tips to make sure your pup stays safe and cool.</p>
+          <div class="blog-card-footer">
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> Mar 15, 2026</span>
+              <span><i class="bi bi-clock"></i> 4 min read</span>
+            </div>
+            <a class="read-btn" href="#">Read</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=500&q=80" alt="Dog park rules">
+        <div class="blog-card-content">
+          <span class="tag tag-park"><i class="bi bi-tree-fill"></i> Park updates</span>
+          <h5>Pas Dog Park: Updated entry rules for 2026</h5>
+          <p>Zagreb's Pas Dog Park has updated its entry policy. All dogs must now have proof of vaccination at the gate.</p>
+          <div class="blog-card-footer">
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> Mar 2, 2026</span>
+              <span><i class="bi bi-clock"></i> 2 min read</span>
+            </div>
+            <a class="read-btn" href="#">Read</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=500&q=80" alt="Dog social">
+        <div class="blog-card-content">
+          <span class="tag tag-event"><i class="bi bi-calendar-event-fill"></i> Events</span>
+          <h5>Monthly Dog Social - May Edition</h5>
+          <p>Join us every first Saturday of the month for a relaxed off-leash social gathering at Greenwood Dog Park.</p>
+          <div class="blog-card-footer">
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> Feb 20, 2026</span>
+              <span><i class="bi bi-clock"></i> 2 min read</span>
+            </div>
+            <a class="read-btn" href="#">Read</a>
+          </div>
+        </div>
       </article>
     </section>
-
     <div id="footer-placeholder"></div>
   </main>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/partials.js"></script>
 </body>
