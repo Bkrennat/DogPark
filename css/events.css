@@ -1,17 +1,12 @@
-.event-note {
-    font-size: .72rem;
-    color: #666;
-    margin-top: 10px;
+.quick-chip.active-chip {
+  background: #e6c800;
+  border-color: #e6c800;
+  color: #333;
 }
-
-.event-badge {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    background: var(--pink);
-    color: white;
-    border-radius: 999px;
-    padding: 3px 7px;
-    font-size: .62rem;
-    font-weight: 700;
+.search-box:focus {
+  border-color: #e6c800;
+  box-shadow: 0 0 0 .2rem rgba(230,200,0,.2);
+}
+.park-card-city i {
+  color: #e6c800;
 }
