@@ -47,6 +47,9 @@
 
 .dog-navbar .nav-link.active {
   color: var(--active);
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-underline-offset: 15px;
 }
 
 .dog-navbar .nav-link.active i {

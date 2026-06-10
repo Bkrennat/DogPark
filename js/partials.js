@@ -34,8 +34,10 @@ function loadPartial(id, file) {
       fixPartialPaths(container);
 
       if (id === 'navbar-placeholder') {
+        const activePage = (currentPage === 'park-info.html') ? 'parks.html' : currentPage;
+
         document.querySelectorAll('.dog-navbar .nav-link[data-navlink]').forEach(link => {
-          if (link.dataset.navlink === currentPage) {
+          if (link.dataset.navlink === activePage) {
             link.classList.add('active');
           }
         });
