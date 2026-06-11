@@ -1,3 +1,56 @@
+.section-subtitle {
+  color: var(--active);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.page-hero {
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 2px solid #ccc;
+}
+
+.page-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .58), rgba(0, 0, 0, .08));
+}
+
+.page-hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(88%, 680px);
+  text-align: center;
+  color: white;
+}
+
+.page-hero-copy h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.page-hero-copy p:last-child {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
 .park-card {
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -221,4 +274,14 @@
   font-weight: 700;
   color: #555;
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 250px;
+  }
+
+  .page-hero-copy h1 {
+    font-size: 2rem;
+  }
 }
