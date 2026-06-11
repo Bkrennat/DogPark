@@ -50,6 +50,14 @@
   text-shadow: none;
 }
 
+a:has(.feature-card) .feature-card {
+  cursor: pointer;
+  transition: transform .2s;
+}
+a:has(.feature-card):hover .feature-card {
+  transform: translateY(-4px);
+}
+
 .card-safety { background: #fff; border: 3px solid var(--pink); }
 .card-safety h5 { color: var(--pink); }
 
